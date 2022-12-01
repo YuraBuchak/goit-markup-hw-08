@@ -1,0 +1,50 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.heder__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-color {
+  color: #000000;
+}
+
+// контакти
+.contact__list {
+  display: flex;
+  margin-left: auto;
+  align-items: baseline;
+}
+
+.contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+
+  transition: color var(--anima-tz);
+
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+
+.contact__mail-icon,
+.contact__tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

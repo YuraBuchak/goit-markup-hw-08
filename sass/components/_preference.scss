@@ -1,0 +1,38 @@
+.preference {
+  @include paddingSection;
+}
+
+.preference__list {
+  display: flex;
+  text-align: left;
+  gap: 30px;
+}
+
+.preference__item {
+  width: 270px;
+}
+
+.preference__picture {
+  @extend %flexCenter;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.preference__subtitle {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+
+  margin-bottom: 10px;
+}
+
+.preference__text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
