@@ -2,6 +2,12 @@
   @include paddingSection(0px);
 }
 
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
 .work__title {
   @extend %titleSection;
 }
