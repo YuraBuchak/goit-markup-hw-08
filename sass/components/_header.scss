@@ -1,4 +1,8 @@
 .header {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -14,20 +18,35 @@
 
 // контакти
 .contact__list {
-  display: flex;
-  margin-left: auto;
-  align-items: baseline;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: baseline;
+  }
 }
 
 .contact__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .contact__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   font-weight: 500;
   font-size: 14px;
@@ -46,5 +65,12 @@
 .contact__mail-icon,
 .contact__tel-icon {
   fill: currentColor;
-  margin-right: 10px;
+
+  @media screen and (max-width: 1199px) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }

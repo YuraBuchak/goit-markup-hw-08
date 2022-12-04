@@ -5,8 +5,18 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    & {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      display: flex;
+      align-items: baseline;
+    }
+  }
 }
 
 .footer__logo {
@@ -18,12 +28,27 @@
 }
 
 // контакти
+.footer__address {
+  @media screen and (max-width: 1199px) {
+    & {
+      margin-bottom: 60px;
+    }
+  }
+}
 
 .address__map {
   @extend %footerContact;
-
   color: #ffffff;
-  margin-bottom: 9px;
+  @media screen and (max-width: 1199px) {
+    & {
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .address__tel,
@@ -40,13 +65,32 @@
 }
 
 .address__mail {
-  margin-bottom: 9px;
+  @media screen and (max-width: 1199px) {
+    & {
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 // соціальні мережі футера
 
 .socials {
-  margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    & {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-left: 70px;
+    }
+  }
 }
 .socials__title {
   font-size: 14px;
@@ -84,7 +128,11 @@
 // футер форма
 
 .footer__form {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-left: auto;
+    }
+  }
 }
 
 .footer__form-text {
@@ -98,6 +146,36 @@
   margin-bottom: 20px;
 }
 
+.subscribe {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.subscribe__field {
+  @media screen and (max-width: 1199px) {
+    & {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.footer_wrapper-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 // knopka
 .footer__subscribe-btn {
   font-weight: 700;
@@ -109,16 +187,23 @@
   border-color: transparent;
   cursor: pointer;
 
+  width: 200px;
+  min-height: 50px;
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
-  margin-left: 12px;
-  padding-top: 10px;
   padding-bottom: 10px;
+  padding-top: 10px;
 
-  min-width: 200px;
-  min-height: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 
   transition: background-color var(--anima-tz), box-shadov var(--anima-tz);
 

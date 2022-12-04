@@ -11,8 +11,18 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
+
   padding: 40px;
 
   background: #ffffff;
@@ -64,17 +74,21 @@
     fill: var(--brand-color);
   }
 }
-
 // кнопка
 
 .modal__title {
   display: block;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
 }
 
 .modal__label {
@@ -87,9 +101,16 @@
 }
 
 .modal__field-wrapper {
-  display: block;
-  width: 448px;
   height: 40px;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+
+  display: block;
   margin-top: 4px;
 
   position: relative;
@@ -133,10 +154,15 @@
   min-height: 120px;
 
   &::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
   }
 }
 
@@ -146,8 +172,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  min-width: 96px;
-  min-height: 30px;
+  min-width: 200px;
+  min-height: 50px;
   padding: 10px 52px;
   margin-top: 30px;
 
@@ -186,12 +212,17 @@
 }
 
 .agreement__text {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: #757575;
   margin-left: 9px;
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .agreement__link {

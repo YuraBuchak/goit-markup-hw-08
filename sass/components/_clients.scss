@@ -1,5 +1,15 @@
 .client {
-  @include paddingSection;
+  @media screen and (max-width: 1199px) {
+    & {
+      @include paddingSectionMb;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      @include paddingSection;
+    }
+  }
 }
 
 .client__title {

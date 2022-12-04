@@ -5,8 +5,12 @@
 
 .navigation__list {
   display: flex;
-  margin-left: 93px;
+  margin-left: 87px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .navigation__item:not(:last-child) {
