@@ -1,9 +1,7 @@
 .work {
   @include paddingSection(0px);
-}
 
-@media screen and (max-width: 1199px) {
-  .work {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }

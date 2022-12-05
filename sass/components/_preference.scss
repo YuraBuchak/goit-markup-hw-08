@@ -1,14 +1,8 @@
 .preference {
-  @media screen and (max-width: 1199px) {
-    & {
-      @include paddingSectionMb;
-    }
-  }
+  @include paddingSectionMb;
 
   @media screen and (min-width: 1200px) {
-    & {
-      @include paddingSection;
-    }
+    @include paddingSection;
   }
 }
 
@@ -18,9 +12,7 @@
   gap: 30px;
 
   @media screen and (max-width: 1199px) {
-    & {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
   }
 }
 
@@ -28,14 +20,10 @@
   flex-basis: 450px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      flex-basis: calc((100% - 30px) / 2);
-    }
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200) {
-    & {
-      flex-basis: calc((100% - 30px * 3) / 4);
-    }
+    flex-basis: calc((100% - 30px * 3) / 4);
   }
 }
 
@@ -57,9 +45,7 @@
   margin-bottom: 10px;
 
   @media screen and (max-width: 767px) {
-    & {
-      text-align: center;
-    }
+    text-align: center;
   }
 }
 

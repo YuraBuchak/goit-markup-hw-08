@@ -1,15 +1,9 @@
 .team {
   background: #f5f4fa;
-  @media screen and (max-width: 1199px) {
-    & {
-      @include paddingSectionMb;
-    }
-  }
+  @include paddingSectionMb;
 
   @media screen and (min-width: 1200px) {
-    & {
-      @include paddingSection;
-    }
+    @include paddingSection;
   }
 }
 
@@ -21,10 +15,8 @@
   display: flex;
 
   @media screen and (max-width: 1199px) {
-    & {
-      flex-wrap: wrap;
-      gap: 30px;
-    }
+    flex-wrap: wrap;
+    gap: 30px;
   }
   @media screen and (min-width: 1200px) {
     & {
@@ -41,37 +33,18 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   @media screen and (min-width: 480px) {
-    & {
-      flex-basis: 450px;
-      height: 622px;
-    }
+    flex-basis: 450px;
+    height: 622px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      flex-basis: calc((100% - 30px) / 2);
-      height: 536px;
-    }
+    flex-basis: calc((100% - 30px) / 2);
+    height: 536px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      flex-basis: calc(100% / 4 - 30px);
-      height: 428px;
-      margin-left: 30px;
-      margin-top: 30px;
-    }
-  }
-}
-
-.team__img {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    & {
-      height: 460px;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      height: 374px;
-    }
+    flex-basis: calc(100% / 4 - 30px);
+    height: 428px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -80,14 +53,10 @@
   padding-top: 30px;
 
   @media screen and (max-width: 1199px) {
-    & {
-      padding-bottom: 24px;
-    }
+    padding-bottom: 24px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      padding-bottom: 30px;
-    }
+    padding-bottom: 30px;
   }
 }
 .team__subtitle {

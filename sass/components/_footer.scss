@@ -11,16 +11,12 @@
   }
 
   @media screen and (max-width: 1199px) {
-    & {
-      text-align: center;
-    }
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
-    & {
-      display: flex;
-      align-items: baseline;
-    }
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -35,16 +31,12 @@
 // контакти
 .footer__address {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      margin-left: 76px;
-      margin-right: 168px;
-    }
+    margin-left: 76px;
+    margin-right: 168px;
   }
 
   @media screen and (max-width: 1199px) {
-    & {
-      margin-bottom: 60px;
-    }
+    margin-bottom: 60px;
   }
 }
 
@@ -53,14 +45,10 @@
   color: #ffffff;
 
   @media screen and (max-width: 1199px) {
-    & {
-      margin-bottom: 8px;
-    }
+    margin-bottom: 8px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      margin-bottom: 9px;
-    }
+    margin-bottom: 9px;
   }
 }
 
@@ -79,14 +67,10 @@
 
 .address__mail {
   @media screen and (max-width: 1199px) {
-    & {
-      margin-bottom: 8px;
-    }
+    margin-bottom: 8px;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      margin-bottom: 9px;
-    }
+    margin-bottom: 9px;
   }
 }
 
@@ -94,15 +78,11 @@
 
 .socials {
   @media screen and (max-width: 767px) {
-    & {
-      margin-bottom: 60px;
-    }
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
-    & {
-      margin-left: 70px;
-    }
+    margin-left: 70px;
   }
 }
 .socials__title {
@@ -142,16 +122,12 @@
 
 .footer__form {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
-    & {
-      margin-left: auto;
-    }
+    margin-left: auto;
   }
 }
 
@@ -168,33 +144,17 @@
 
 .subscribe {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      display: flex;
-      flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .subscribe__field {
   @media screen and (max-width: 1199px) {
-    & {
-      display: block;
-      margin-bottom: 20px;
-    }
+    display: block;
+    margin-bottom: 20px;
   }
 }
-
-// .footer_wrapper-tablet {
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: baseline;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     display: flex;
-//     align-items: baseline;
-//   }
-// }
 
 // knopka
 .footer__subscribe-btn {
