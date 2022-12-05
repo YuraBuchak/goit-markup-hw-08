@@ -5,6 +5,11 @@
 }
 
 .footer__container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   @media screen and (max-width: 1199px) {
     & {
       text-align: center;
@@ -29,6 +34,13 @@
 
 // контакти
 .footer__address {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      margin-left: 76px;
+      margin-right: 168px;
+    }
+  }
+
   @media screen and (max-width: 1199px) {
     & {
       margin-bottom: 60px;
@@ -128,6 +140,13 @@
 // футер форма
 
 .footer__form {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     & {
       margin-left: auto;
@@ -164,17 +183,17 @@
   }
 }
 
-.footer_wrapper-tablet {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-  }
-}
+// .footer_wrapper-tablet {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: baseline;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     align-items: baseline;
+//   }
+// }
 
 // knopka
 .footer__subscribe-btn {
