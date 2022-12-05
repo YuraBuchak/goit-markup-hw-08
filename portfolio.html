@@ -64,6 +64,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu menu-toggle--open-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-mb_menu" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-mb_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -279,6 +288,58 @@
           </ul>
         </div>
       </section>
+      <!-- мобайл меню -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu menu-toggle--close-btn">
+          <svg class="icon-close_mbmenu" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close_mbmenu"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu_nav">
+            <a href="" class="mobile-menu_link link">Студія</a>
+          </li>
+          <li class="mobile-menu_nav">
+            <a href="" class="mobile-menu_link current--mobile link"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile-menu_nav">
+            <a href="" class="mobile-menu_link link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobmenu_contact list">
+          <li class="mobmenu_item">
+            <a class="mobmenu_contact-phone link" href="">+38 096 111 11 11</a>
+          </li>
+          <li class="mobmenu_item">
+            <a class="mobmenu_contact-mail link" href="">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-socials list">
+          <li class="mobile-socials_item">
+            <a class="mobile-socials_link link" href="">Instagram</a>
+          </li>
+          <li class="mobile-socials_item">
+            <a class="mobile-socials_link link" href="">Twitter</a>
+          </li>
+          <li class="mobile-socials_item">
+            <a class="mobile-socials_link link" href="">Facebook</a>
+          </li>
+          <li class="mobile-socials_item">
+            <a class="mobile-socials_link link" href="">LinkedIn</a>
+          </li>
+        </ul>
+        <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
+      </div>
     </main>
     <!-- ФУТЕР -->
     <footer class="footer">

@@ -1,9 +1,5 @@
 .client {
-  @media screen and (max-width: 1199px) {
-    & {
-      @include paddingSectionMb;
-    }
-  }
+  @include paddingSectionMb;
 
   @media screen and (min-width: 1200px) {
     & {

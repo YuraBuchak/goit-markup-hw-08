@@ -1,9 +1,9 @@
-@mixin paddingSection($pt: 94px, $pb: 94px) {
+@mixin paddingSectionMb($pt: 60px, $pb: 60px) {
   padding-top: $pt;
   padding-bottom: $pb;
 }
 
-@mixin paddingSectionMb($pt: 60px, $pb: 60px) {
+@mixin paddingSection($pt: 94px, $pb: 94px) {
   padding-top: $pt;
   padding-bottom: $pb;
 }
