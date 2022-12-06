@@ -2,7 +2,7 @@
   @include paddingSectionMb;
 
   @media screen and (min-width: 1200px) {
-      @include paddingSection;
+    @include paddingSection;
   }
 }
 
@@ -15,14 +15,14 @@
   gap: 30px;
 
   @media screen and (max-width: 1199px) {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
 .client__item {
   height: 92px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 768px) {
