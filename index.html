@@ -155,31 +155,62 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list list">
             <li class="work__item">
-              <img
-                src="./images/activity-1.jpg"
-                alt="Людина друкує на компютері"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-1.jpg    1x,
+                    ./images/work/work-1@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="../images/work/work-1.jpg"
+                  alt="Людина друкує на компютері"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="work__overlay">
                 <p class="work__text-overlay">Десктопні додатки</p>
               </div>
             </li>
             <li class="work__item">
-              <img
-                src="./images/activity-2.jpg"
-                alt="Синхронізація мобільного телефону та компютера"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-2.jpg    1x,
+                    ./images/work/work-2@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/work/work-2.jpg"
+                  alt="Синхронізація мобільного телефону та компютера"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <div class="work__overlay">
                 <p class="work__text-overlay">Мобільні додатки</p>
               </div>
             </li>
             <li class="work__item">
-              <img
-                src="./images/activity-3.jpg"
-                alt="Людина малює фігури на планшеті"
-                width="370"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work/work-3.jpg    1x,
+                    ./images/work/work-3@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/work/work-3.jpg"
+                  alt="Людина малює фігури на планшеті"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <div class="work__overlay">
                 <p class="work__text-overlay">Дизайнерські рішення</p>
               </div>
@@ -195,11 +226,32 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo-1.jpg"
-                alt="Член команди №1"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-1l.jpg    1x,
+                    ./images/team/team-1l-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1m.jpg    1x,
+                    ./images/team/team-1m-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-1s.jpg    1x,
+                    ./images/team/team-1s-2x.jpg 2x
+                  "
+                />
+                <img class="team__img" src="./images/team/team-1s.jpg" alt="Член
+                команди №1" width: 450px; height: 460px; loading="lazy" />
+              </picture>
+
               <div class="team__info">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -266,11 +318,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo-2.jpg"
-                alt="Член команди №2"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-2l.jpg    1x,
+                    ./images/team/team-2l-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2m.jpg    1x,
+                    ./images/team/team-2m-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-2s.jpg    1x,
+                    ./images/team/team-2s-2x.png 2x
+                  "
+                />
+                <img class="team__img" src="./images/team/team-2s.jpg" alt="Член
+                команди №2" width: 450px; height: 460px; loading="lazy"/>
+              </picture>
+
               <div class="team__info">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -337,11 +410,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo-3.jpg"
-                alt="Член команди №3"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-3l.jpg    1x,
+                    ./images/team/team-3l-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3m.jpg    1x,
+                    ./images/team/team-3m-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-3s.jpg    1x,
+                    ./images/team/team-3s-2x.jpg 2x
+                  "
+                />
+                <img class="team__img" src="./images/team/team-3s.jpg" alt="Член
+                команди №3" width: 450px; height: 460px; loading="lazy"/>
+              </picture>
+
               <div class="team__info">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -408,11 +502,32 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo-4.jpg"
-                alt="Член команди №4"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-4l.jpg    1x,
+                    ./images/team/team-4l-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4m.jpg    1x,
+                    ./images/team/team-4m-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-4s.jpg    1x,
+                    ./images/team/team-4s-2x.jpg 2x
+                  "
+                />
+                <img class="team__img" src="./images/team/team-4s.jpg" alt="Член
+                команди №4" width: 450px; height: 460px; loading="lazy"/>
+              </picture>
+
               <div class="team__info">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
