@@ -220,17 +220,23 @@ p {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--text-color);
   -webkit-transition: color var(--anima-tz);
   transition: color var(--anima-tz);
 }
+@media screen and (min-width: 768px) {
+  .contact__link {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.1428571429;
   }
 }
 .contact__link:hover, .contact__link:focus {
@@ -324,10 +330,10 @@ p {
   border: 1px solid #000000;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: #2f303a;
   max-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -362,8 +368,6 @@ p {
   .hero {
     max-width: 1600px;
     max-height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_l@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_l@1x.jpg);
   }
@@ -372,6 +376,12 @@ p {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_l@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_l@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
