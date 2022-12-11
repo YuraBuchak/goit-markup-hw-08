@@ -1,3 +1,9 @@
+
+.projects__info:nth-child(1) {
+height: 146px;
+}
+
+
 /* :root {
   --brand-color: #2196f3;
   --text-color: #757575;
@@ -667,6 +673,7 @@ p {
   border: 1px solid #eeeeee;
   border-top: none;
 }
+
 .projects__link {
   display: block;
   transition: box-shadow var(--anima-tz);
